@@ -81,7 +81,6 @@
   padding: 0;
   padding-top: 0.5rem; }
   .jumbotron h2 {
-    /*color:map-get($verde_tono,claro);*/
     color: #78f578; }
   .jumbotron p {
     margin-bottom: 0; }
@@ -104,8 +103,6 @@
   margin-bottom: 0;
   padding-bottom: 10px;
   text-align: center;
-  /*align-items: center;*/
-  /*color: map-get($verde_tono,oscuro);*/
   color: black;
   background-color: #e5f5e5; }
 
@@ -117,7 +114,7 @@
 .card:hover {
   transform: scale(1.03);
   transition: all 1s;
-  border-color: green; }
+  border-color: #78f578; }
 
 .btn {
   background-color: #040458;
@@ -138,7 +135,6 @@
 
 .titulos_pagina_contacto, .titulo_formulario, .titulo_mapa {
   text-align: center;
-  /*color: map-get($verde_tono,claro);*/
   color: #78f578; }
 
 .titulo_formulario {

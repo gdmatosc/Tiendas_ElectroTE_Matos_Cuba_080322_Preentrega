@@ -5,6 +5,8 @@ $color_black: black;
 
 $verde_tono: (
     claro:lightgreen,
+    muy_claro:rgb(229, 245, 229),
+    claro_resaltado:rgb(120, 245, 120),
     normal: green,
     oscuro: darkgreen
 );
@@ -109,8 +111,7 @@ $verde_tono: (
     padding:0;
     padding-top: 0.5rem;
     h2 {
-        /*color:map-get($verde_tono,claro);*/
-        color: rgb(120, 245, 120);
+        color:map-get($verde_tono,claro_resaltado);  
     }
     p {
         margin-bottom: 0;
@@ -136,10 +137,8 @@ $verde_tono: (
     margin-bottom: 0;
     padding-bottom: 10px;
     text-align: center;
-    /*align-items: center;*/
-    /*color: map-get($verde_tono,oscuro);*/
-    color:black;
-    background-color: rgb(229, 245, 229);
+    color:$color_black;
+    background-color: map-get($verde_tono,muy_claro);
 }
 
 .card{
@@ -152,7 +151,7 @@ $verde_tono: (
     &:hover{
     transform: scale($scale);
     transition: $transition;
-    border-color: map-get($verde_tono,$color_verde_tono);
+    border-color: map-get($verde_tono,claro_resaltado);
     }
 }
 
@@ -183,8 +182,7 @@ $verde_tono: (
 
 .titulos_pagina_contacto {
     text-align: center;
-    /*color: map-get($verde_tono,claro);*/
-    color: rgb(120, 245, 120);
+    color: map-get($verde_tono,claro_resaltado); 
 }
 
 .titulo_formulario{
